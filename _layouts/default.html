@@ -2,22 +2,13 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
 
-    {% if site.google_analytics %}
-      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '{{ site.google_analytics }}');
-      </script>
-    {% endif %}
     <meta charset="UTF-8">
 
 {% seo %}
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
+    <meta name="theme-color" content="#2f302f">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
@@ -36,8 +27,9 @@
     </header>
 
     <main id="content" class="main-content" role="main">
-      <div class=”gallery”>
-  <figure class=”gallery__item gallery__item--1">
+      
+  <div class=”gallery”>
+   <figure class=”gallery__item gallery__item--1">
     <img src="https://i.imgur.com/FqSs6be.png" class="gallery__img" alt="Image 1">
   </figure>
   <figure class="gallery__item gallery__item--2">
@@ -62,11 +54,13 @@
     <img src="https://i.imgur.com/BtgyA8N.jpg" class="gallery__img" alt="Image 8">
   </figure>                                                                               
 </div>
+                                                                                 
       {{ content }}
 
       <footer class="site-footer">
   
       </footer>
+                                 
     </main>
   </body>
 </html>
